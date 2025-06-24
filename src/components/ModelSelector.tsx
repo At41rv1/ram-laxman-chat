@@ -9,23 +9,23 @@ interface ModelSelectorProps {
 }
 
 const ModelSelector: React.FC<ModelSelectorProps> = ({ selectedModel, onModelChange }) => {
-  const models = [
+  const models = 
+[
      {
       id: 'deepseek-r1-distill-llama-70b',
       name: 'Smart Mode',
       description: 'Detailed responses',
       icon: MessageSquare,
       color: 'text-blue-600'
-    }
-      {
+        }
+    {
       id: 'llama-3.1-8b-instant',
       name: 'Fast Mode',
       description: 'Quick responses',
       icon: Zap,
       color: 'text-orange-600'
-    },
-   
-  ];
+         },
+ ];
 
   const currentModel = models.find(m => m.id === selectedModel) || models[0];
 
