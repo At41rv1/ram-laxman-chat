@@ -24,7 +24,7 @@ const Index = () => {
           </div>
           
           <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold text-gray-800 mb-6 animate-fade-in delay-300">
-            Chat 3
+            Tria 
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-600 to-gray-800"> AI</span>
           </h1>
           
