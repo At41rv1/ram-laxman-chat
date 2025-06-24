@@ -17,7 +17,7 @@ const ModelSelector: React.FC<ModelSelectorProps> = ({ selectedModel, onModelCha
       description: 'Detailed responses',
       icon: MessageSquare,
       color: 'text-blue-600'
-        }
+        },
     {
       id: 'llama-3.1-8b-instant',
       name: 'Fast Mode',
