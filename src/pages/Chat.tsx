@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 import { Send, User, Home, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -84,7 +83,7 @@ const Chat = () => {
       // Get Ram's response first
       const ramResponse = await callGroqAPI(
         `Here's our conversation so far:\n${conversationContext}\n\nPlease respond as Ram. Keep it conversational and engaging.`,
-        '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',
+        import.meta.env.VITE_GROQ_API_KEY_1 || '',
         'Ram'
       );
 
@@ -104,7 +103,7 @@ const Chat = () => {
         
         const laxmanResponse = await callGroqAPI(
           `Here's our conversation so far:\n${updatedContext}\n\nPlease respond as Laxman. You can respond to both the user and Ram's message. Keep it funny and engaging while being helpful.`,
-          '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',
+          import.meta.env.VITE_GROQ_API_KEY_2 || '',
           'Laxman'
         );
 
@@ -125,6 +124,7 @@ const Chat = () => {
     }
   };
 
+  // ... keep existing code (getSenderName, getSenderColor functions and JSX return)
   const getSenderName = (sender: string) => {
     switch (sender) {
       case 'user':
