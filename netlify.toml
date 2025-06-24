@@ -9,11 +9,3 @@
   from = "/*"
   to = "/index.html"
   status = 200
-
-[context.production.environment]
-  VITE_GROQ_API_KEY_1 = ""
-  VITE_GROQ_API_KEY_2 = ""
-
-[context.deploy-preview.environment]
-  VITE_GROQ_API_KEY_1 = ""
-  VITE_GROQ_API_KEY_2 = ""
