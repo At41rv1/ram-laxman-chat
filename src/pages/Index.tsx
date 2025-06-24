@@ -24,8 +24,8 @@ const Index = () => {
           </div>
           
           <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold text-gray-800 mb-6 animate-fade-in delay-300">
-            Triple
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-600 to-gray-800"> Chat</span>
+            Chat 3
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-600 to-gray-800"> AI</span>
           </h1>
           
           <p className="text-xl sm:text-2xl md:text-3xl text-gray-600 mb-6 animate-fade-in delay-500 leading-relaxed">
@@ -33,7 +33,7 @@ const Index = () => {
           </p>
           
           <p className="text-base sm:text-lg text-gray-500 mb-12 max-w-3xl mx-auto animate-fade-in delay-700 leading-relaxed px-4">
-            Experience dynamic conversations with AI companions or get personalized learning support with our intelligent tutoring system that adapts to your unique learning style.
+            Experience dynamic conversations with AI companions or get personalized learning support with our intelligent tutoring system that adapts to your unique learning style. ~ by at41rv
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in delay-1000">
