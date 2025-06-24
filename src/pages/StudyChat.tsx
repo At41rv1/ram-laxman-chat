@@ -83,7 +83,7 @@ const StudyChat = () => {
       // Get first tutor's response
       const tutor1Response = await callGroqAPI(
         `Learning context:\n${conversationContext}\n\nPlease provide educational support as Tutor1. Focus on clear explanations and structured learning.`,
-        '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',
+        import.meta.env.VITE_GROQ_API_KEY_1 || '',
         'Tutor1'
       );
 
@@ -101,7 +101,7 @@ const StudyChat = () => {
         
         const tutor2Response = await callGroqAPI(
           `Learning context:\n${updatedContext}\n\nPlease provide additional educational support as Tutor2. You can build on Tutor1's explanation with engaging examples and connections.`,
-          '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',
+          import.meta.env.VITE_GROQ_API_KEY_2 || '',
           'Tutor2'
         );
 
@@ -122,6 +122,7 @@ const StudyChat = () => {
     }
   };
 
+  // ... keep existing code (getSenderName, getSenderColor functions and JSX return)
   const getSenderName = (sender: string) => {
     switch (sender) {
       case 'user':
